@@ -1,0 +1,7 @@
+name: Tektronix Master
+type: module
+description: 'Tektronix master deployment module.'
+package: Tektronix
+core: 8.x
+
+dependencies:

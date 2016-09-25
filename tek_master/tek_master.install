@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Tektronix install functions.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function tek_master_install() {
+  tek_master_set_uuid('2c7dee25-236d-4f50-971a-371e094fe629');
+  for ($i = 8001; $i < 9000; $i++) {
+    $candidate = 'tek_master_update_' . $i;
+    if (function_exists($candidate)) {
+      $candidate();
+    }
+  }
+}
+
+/**
+ * Enable all modules dependencies.
+ */
+function tek_master_update_8001() {
+  _tek_master_update_dependencies();
+}
