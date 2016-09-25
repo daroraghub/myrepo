@@ -1,6 +1,6 @@
 name: Tektronix Master
 type: module
-description: 'Tektronix master deployment module.'
+description: 'Tektronix master module for deployment.'
 package: Tektronix
 core: 8.x
 
